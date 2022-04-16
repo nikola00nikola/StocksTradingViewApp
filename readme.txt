@@ -11,4 +11,5 @@ fajl "dll_folder/RadSaBazom.dll" je dobijen build-ovanjem sledecih fajlova:
 
 
 Za pokretanje aplikacije neophodno je dodati path foldera "dll_folder" u Java Build Path-> Libraries-> Native library location.
-Pored toga mora se kreirati baza podataka "baza.db" u folderu projekta, i u njoj kreirati jedna tabela, za cije je kreiranje dat sql skript u fajlu "createTableUsers.sql".Ostale tabele(tabele za pracenje kupljenih/prodatih akcija) 
+Pored toga mora se kreirati baza podataka "baza.db" u folderu projekta, i u njoj kreirati jedna tabela, za cije je kreiranje dat sql skript u fajlu "createTableUsers.sql".
+Ostale tabele(tabele za pracenje kupljenih/prodatih akcija) kreira sam program i vodi racuna o njima.

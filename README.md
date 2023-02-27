@@ -8,7 +8,7 @@ Database "baza.db" is used for storing data about registered users (Table "Users
 
 Functions for work with database are implemented in c++ (using sqlite3), files: *"dll_folder/nativeMetode_BazaPodataka.h"* and *"dll_folder/nativeMetode_BazaPodataka.cpp"*. These two files are built as *"dll_folder/RadSaBazom.dll"* and used in Java project as Native library.
 
-Function for fetching data from WEB (Yahoo) are implemented in c++ (CURL library), files:*"nativeMetode_Parse.h"* and *"nativeMetode_Parse.cpp"*.
+Function for fetching data about stock from WEB (Yahoo) is implemented in c++ (CURL library), files:*"nativeMetode_Parse.h"* and *"nativeMetode_Parse.cpp"*.
 These two files are built as *"dll_folder/Parser.dll"* and used in Java project as Native library.
 
 User api is built and implemented in Java.

@@ -6,14 +6,14 @@ Application implements displaying stocks value through history (Candle format, r
 ### Implementation
 Database "baza.db" is used for storing data about registered users (Table "Users") and purchased stocks.
 
-Functions for work with database are implemented in c++ (using sqlite3), files: *"dll_folder/nativeMetode_BazaPodataka.h"* and *"dll_folder/nativeMetode_BazaPodataka.cpp"*. These two files are built as *"dll_folder/RadSaBazom.dll"* and used in Java project as Native library.
+Functions for work with database are implemented in c++ (using sqlite3), files: [dll_folder/nativeMetode_BazaPodataka.h](https://github.com/nikola00nikola/StocksTradingViewApp/blob/main/dll_folder/nativeMetode_BazaPodataka.h) and [dll_folder/nativeMetode_BazaPodataka.cpp](https://github.com/nikola00nikola/StocksTradingViewApp/blob/main/dll_folder/nativeMetode_BazaPodataka.cpp). These two files are built as *"dll_folder/RadSaBazom.dll"* and used in Java project as Native library.
 
-Function for fetching data about stock from WEB (Yahoo) is implemented in c++ (CURL library), files:*"nativeMetode_Parse.h"* and *"nativeMetode_Parse.cpp"*.
+Function for fetching data about stock from WEB (Yahoo) is implemented in c++ (CURL library), files:[dll_folder/nativeMetode_Parse.h](https://github.com/nikola00nikola/StocksTradingViewApp/blob/main/dll_folder/nativeMetode_Parser.h) and [dll_folder/nativeMetode_Parse.cpp](https://github.com/nikola00nikola/StocksTradingViewApp/blob/main/dll_folder/nativeMetode_Parser.cpp).
 These two files are built as *"dll_folder/Parser.dll"* and used in Java project as Native library.
 
 User api is built and implemented in Java.
 
-For running the app need to add path of *"dll_folder"* to Java project native library location, create database called "baza.db" in project location(parent of src folder) and run scrypt *"createTableUsers.sql"* to init the database.
+For running the app need to add path of *"dll_folder"* to Java project native library location, create database called "baza.db" in project location(parent of src folder) and run scrypt [createTableUsers.sql](https://github.com/nikola00nikola/StocksTradingViewApp/blob/main/createTableUsers.sql) to init the database.
 
 ## Appearance
 #### Browsing stock candles (real-world prices)
